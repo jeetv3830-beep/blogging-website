@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeet Vyas - Personal Blog</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="site-title">Jeet Vyas</a>
+
+      <div class="header-actions">
+        <nav id="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/blog.html">Blog</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button type="button" class="theme-btn" id="theme-toggle">Dark</button>
+        <button type="button" class="menu-btn" id="mobile-menu-btn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content of the page -->
+  <main class="container">
+
+    <!-- Profile's Intro Card...  -->
+    <section class="profile-box">
+      <img src="assets/profile.jpg" alt="Jeet Vyas Photo" class="avatar-image">
+      <div class="profile-info">
+        <h1>Hi, I'm Jeet Vyas</h1>
+        <p class="profile-role">Student & Web Learner</p>
+        <p>
+          Welcome to my personal website. I write simple notes and share what I learn every day in HTML, CSS, JavaScript, and Java.
+        </p>
+        <div class="button-row">
+          <a href="pages/blog.html" class="btn btn-primary">Read Blog</a>
+          <a href="pages/about.html" class="btn btn-secondary">About Me</a>
+          <a href="https://github.com/jeetv3830-beep" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
+          <a href="https://www.linkedin.com/in/jeet-vyas-ba7214318/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- whats i am cureently learning-->
+    <section class="content-section">
+      <h2>What I Am Learning</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <h3>Web Development</h3>
+          <p>HTML, CSS, and basic JavaScript to build responsive web pages.</p>
+        </div>
+        <div class="card">
+          <h3>Java & DSA</h3>
+          <p>Learning Java fundamentals, Loops, Arrays, and problem solving.</p>
+        </div>
+        <div class="card">
+          <h3>UI/UX Design</h3>
+          <p>Designing clean, neat, and user-friendly layouts.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- recently posted blog -->
+    <section class="content-section">
+      <div class="section-header">
+        <h2>Recent Notes</h2>
+        <a href="pages/blog.html">View all &rarr;</a>
+      </div>
+      <div class="blog-list" id="home-recent-list">
+        <!-- Loaded automatically by JavaScript -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/blog.html">Blog</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+      <p>Built by Jeet Vyas</p>
+    </div>
+  </footer>
+
+  <!-- Link to JavaScript file -->
+  <script src="js/script.js"></script>
+</body>
+</html>
