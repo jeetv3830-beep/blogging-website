@@ -1,0 +1,481 @@
+
+/* 1. Base Page Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f6f8fa;
+  color: #24292f;
+  line-height: 1.6;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+body.dark-mode .card,
+body.dark-mode .site-header,
+body.dark-mode .site-footer,
+body.dark-mode .form-panel,
+body.dark-mode .blog-item,
+body.dark-mode .profile-box,
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  background-color: #161b22;
+  color: #c9d1d9;
+  border-color: #30363d;
+}
+
+/* 2. Container to center content */
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Headings and Paragraphs */
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+p {
+  color: #57606a;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+body.dark-mode p {
+  color: #8b949e;
+}
+
+a {
+  color: #0969da;
+  text-decoration: none;
+}
+
+body.dark-mode a {
+  color: #58a6ff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 3. Header and Navigation */
+.site-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #d0d7de;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: inherit;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 6px;
+}
+
+nav a {
+  padding: 5px 8px;
+  border-radius: 4px;
+  color: inherit;
+  font-size: 0.9rem;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #ddf4ff;
+  color: #0969da;
+  text-decoration: none;
+}
+
+body.dark-mode nav a:hover,
+body.dark-mode nav a.active {
+  background-color: #1f3554;
+  color: #79c0ff;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  border: 1px solid #d0d7de;
+  background-color: #ffffff;
+  color: inherit;
+}
+
+.btn-primary {
+  background-color: #0969da;
+  color: #ffffff;
+  border-color: #0969da;
+}
+
+.btn-primary:hover {
+  background-color: #0854ad;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+}
+
+.btn-danger {
+  color: #cf222e;
+  border-color: #cf222e;
+  padding: 2px 6px;
+  font-size: 0.75rem;
+  background: transparent;
+}
+
+.btn-danger:hover {
+  background-color: #cf222e;
+  color: #ffffff;
+}
+
+.theme-btn,
+.menu-btn {
+  padding: 4px 8px;
+  font-size: 0.85rem;
+  border: 1px solid #d0d7de;
+  background-color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.menu-btn {
+  display: none;
+}
+
+/* 4. Profile Box */
+.profile-box {
+  background-color: #ffffff;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.avatar-image {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-role {
+  color: #0969da;
+  font-weight: bold;
+}
+
+body.dark-mode .profile-role {
+  color: #58a6ff;
+}
+
+.button-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+/* 5. Cards & Content Sections */
+.content-section {
+  margin-top: 16px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+/* 6. Tags & Filter Buttons */
+.skills-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.skill-tag,
+.category-filter-btn {
+  background-color: #ddf4ff;
+  color: #0969da;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+body.dark-mode .skill-tag,
+body.dark-mode .category-filter-btn {
+  background-color: #1f3554;
+  color: #79c0ff;
+}
+
+.category-filter-btn.active {
+  background-color: #0969da;
+  color: #ffffff;
+}
+
+body.dark-mode .category-filter-btn.active {
+  background-color: #58a6ff;
+  color: #0d1117;
+}
+
+/* 7. Learning Timeline */
+.timeline {
+  list-style: none;
+  border-left: 2px solid #0969da;
+  padding-left: 12px;
+  margin-top: 8px;
+}
+
+.timeline-entry {
+  margin-bottom: 12px;
+}
+
+.timeline-date {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #0969da;
+}
+
+/* 8. Blog Post Items */
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.blog-item {
+  background-color: #ffffff;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.blog-meta {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 0.8rem;
+  margin-bottom: 4px;
+}
+
+.badge {
+  background-color: #ddf4ff;
+  color: #0969da;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+body.dark-mode .badge {
+  background-color: #1f3554;
+  color: #79c0ff;
+}
+
+.blog-text {
+  color: inherit;
+  margin: 4px 0 8px 0;
+}
+
+.blog-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #d0d7de;
+  padding-top: 6px;
+  font-size: 0.8rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 16px;
+  background-color: #ffffff;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+}
+
+/* 9. Forms & Inputs */
+.form-panel {
+  background-color: #ffffff;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 14px;
+  margin: 12px 0;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 6px 8px;
+  font-size: 0.85rem;
+  border: 1px solid #d0d7de;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: inherit;
+}
+
+textarea {
+  min-height: 70px;
+  resize: vertical;
+}
+
+.search-input {
+  width: 140px;
+}
+
+.notice {
+  display: none;
+  padding: 6px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+  background-color: #dafbe1;
+  color: #1a7f37;
+  border: 1px solid #1a7f37;
+}
+
+/* 10. Contact Grid */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.info-list {
+  list-style: none;
+}
+
+.info-item {
+  margin-bottom: 8px;
+}
+
+/* 11. Footer */
+.site-footer {
+  background-color: #ffffff;
+  border-top: 1px solid #d0d7de;
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 24px;
+  font-size: 0.85rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+/* 12. Mobile Responsive */
+@media (max-width: 600px) {
+  .profile-box {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact-grid,
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  .menu-btn {
+    display: block;
+  }
+  nav {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #d0d7de;
+    padding: 10px;
+  }
+  body.dark-mode nav {
+    background-color: #161b22;
+    border-color: #30363d;
+  }
+  nav.show {
+    display: block;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+}
