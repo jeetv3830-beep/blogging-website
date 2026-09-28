@@ -2,7 +2,7 @@ const themeBtn = document.getElementById("theme-btn");
 
 if (localStorage.getItem("theme") === "dark") {
   document.body.classList.add("dark");
-  themeBtn.textContent = "☀️ Light";
+  themeBtn.textContent = " Light";
 }
 
 themeBtn.addEventListener("click", function () {
@@ -10,9 +10,9 @@ themeBtn.addEventListener("click", function () {
 
   if (document.body.classList.contains("dark")) {
     localStorage.setItem("theme", "dark");
-    themeBtn.textContent = "☀️ Light";
+    themeBtn.textContent = " Light";
   } else {
     localStorage.setItem("theme", "light");
-    themeBtn.textContent = "🌙 Dark";
+    themeBtn.textContent = " Dark";
   }
 });
