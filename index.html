@@ -2,72 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Jeet Vyas</title>
-  <style>
-    * {
-      font-family: sans-serif;
-    }
-    body {
-      max-width: 500px;
-      margin: auto;
-      padding: 10px;
-    }
-    .box {
-      border: 1px solid #ccc;
-      padding: 10px;
-      margin: 10px 0;
-    }
-    img {
-      width: 60px;
-      border-radius: 50%;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeet Vyas - Personal Blog</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <h1>Jeet Vyas</h1>
+  <div class="wrapper">
 
-  <div class="box">
-    <img src="profile.jpg" alt="Jeet">
-    <p><strong>Student & Web Learner</strong></p>
-    <p>I build simple web pages and practice coding daily.</p>
-    <p><a href="mailto:jeetv3830@gmail.com">Email Me</a> | <a href="https://github.com/jeetv3830-beep">GitHub</a></p>
+    <div class="top-bar">
+      <h1>Jeet Vyas</h1>
+      <button id="theme-toggle">Dark Mode</button>
+    </div>
+
+    <div class="profile-box">
+      <img src="profile.jpg" alt="Jeet Vyas">
+      <div class="profile-info">
+        <h2>Student and Web Learner</h2>
+        <p>I build simple web pages and practice coding daily.</p>
+        <p>
+          <a href="mailto:jeetv3830@gmail.com">Email</a> |
+          <a href="https://github.com/jeetv3830-beep">GitHub</a>
+        </p>
+      </div>
+    </div>
+
+    <h2 class="section-title">About</h2>
+    <div class="info-card">
+      <p>I am learning Web Development, Java, C, and Data Structures.</p>
+    </div>
+
+    <h2 class="section-title">Skills</h2>
+    <div class="info-card">
+      <p>HTML, CSS, JavaScript, Java, C, UI/UX, Node.js, Express.js, SQL, Statistics, Data Visualization</p>
+    </div>
+
+    <h2 class="section-title">Notes</h2>
+    <div class="info-card">
+      <h3>HTML, CSS and JS</h3>
+      <p>Learning how to structure and style web pages.</p>
+    </div>
+    <div class="info-card">
+      <h3>Java and DSA</h3>
+      <p>Practicing loops, arrays, problem solving, and Node.js.</p>
+    </div>
+    <div class="info-card">
+      <h3>UI / UX</h3>
+      <p>Learning clean layout and design basics.</p>
+    </div>
+
+    <h2 class="section-title">New Post</h2>
+    <div class="form-box">
+      <div class="form-group">
+        <label for="post-title">Title</label>
+        <input type="text" id="post-title" placeholder="Post title">
+      </div>
+      <div class="form-group">
+        <label for="post-content">Content</label>
+        <textarea id="post-content" placeholder="Write your vlog or note here..."></textarea>
+      </div>
+      <button class="btn-submit" id="post-btn">Publish</button>
+    </div>
+
+    <h2 class="section-title">My Posts</h2>
+    <div id="posts-list">
+      <p class="empty-msg">No posts yet.</p>
+    </div>
+
+    <h2 class="section-title">Contact</h2>
+    <div class="info-card">
+      <p>Email: jeetv3830@gmail.com</p>
+      <p>Location: Bharat</p>
+      <p>Phone: 91577577**</p>
+    </div>
+
+    <footer>
+      <p>Jeet Vyas</p>
+    </footer>
+
   </div>
 
-  <h2>About Me</h2>
-  <div class="box">
-    <p>I am learning Web Development, Java, C, and Data Structures.</p>
-  </div>
-
-  <h2>Skills</h2>
-  <div class="box">
-    <p>HTML, CSS, JavaScript, Java, C,UI/UX,NodeJs,ExpressJs,SQL,Statistics bais,Data visualization </p>
-  </div>
-
-  <h2>My Notes</h2>
-  <div class="box">
-    <h3>HTML&CSS&JS</h3>
-    <p>Learning how to structure and style web pages.</p>
-  </div>
-
-  <div class="box">
-    <h3>Java&DSA</h3>
-    <p>Practicing loops, arrays, and problem solving,learning new topics like NodeJs</p>
-  </div>
-
-  <div class="box">
-    <h3>UI/UX</h3>
-    <p>Learning clean layout and design basics.</p>
-  </div>
-
-  <h2>Contact</h2>
-  <div class="box">
-    <p>Email: <a href="mailto:jeetv3830@gmail.com">jeetv3830@gmail.com</a></p>
-    <p>Location: BHARAT</p>
-    <p>ph NO.:91577577**</p>
-  </div>
-
-
+  <script src="js/script.js"></script>
 
 </body>
 </html>
