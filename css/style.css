@@ -38,6 +38,18 @@ body {
   color: #222;
 }
 
+.login-link {
+  float: right;
+  margin-right: 8px;
+  background-color: #fff;
+  border: 1px solid #999;
+  border-radius: 4px;
+  padding: 5px 12px;
+  font-size: 13px;
+  color: #222;
+  text-decoration: none;
+}
+
 .profile-box {
   background-color: #fff;
   border: 1px solid #ddd;
@@ -218,7 +230,8 @@ footer {
   border-color: #2c2c2c;
 }
 
-.dark-body #theme-toggle {
+.dark-body #theme-toggle,
+.dark-body .login-link {
   border-color: #555;
   color: #e0e0e0;
   background-color: #1e1e1e;
