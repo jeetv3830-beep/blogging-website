@@ -38,7 +38,7 @@ body {
   color: #222;
 }
 
-.login-link {
+.logout-link {
   float: right;
   margin-right: 8px;
   background-color: #fff;
@@ -231,7 +231,7 @@ footer {
 }
 
 .dark-body #theme-toggle,
-.dark-body .login-link {
+.dark-body .logout-link {
   border-color: #555;
   color: #e0e0e0;
   background-color: #1e1e1e;
